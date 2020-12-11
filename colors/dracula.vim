@@ -142,7 +142,7 @@ call s:h('DraculaFg', s:fg)
 call s:h('DraculaFgUnderline', s:fg, s:none, [s:attrs.underline])
 call s:h('DraculaFgBold', s:fg, s:none, [s:attrs.bold])
 
-call s:h('DraculaComment', s:comment)
+call s:h('DraculaComment', s:comment, s:none, [s:attrs.italic])
 call s:h('DraculaCommentBold', s:comment, s:none, [s:attrs.bold])
 
 call s:h('DraculaSelection', s:none, s:selection)
@@ -183,8 +183,8 @@ call s:h('DraculaWarnLine', s:none, s:none, [s:attrs.undercurl], s:orange)
 call s:h('DraculaInfoLine', s:none, s:none, [s:attrs.undercurl], s:cyan)
 
 call s:h('DraculaTodo', s:cyan, s:none, [s:attrs.bold, s:attrs.inverse])
-call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
-call s:h('DraculaBoundary', s:comment, s:bgdark)
+call s:h('DraculaSearch', s:comment, s:fg, [s:attrs.inverse])
+call s:h('DraculaBoundary', s:comment, s:bg)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
 call s:h('DraculaDiffChange', s:orange, s:none)
@@ -205,7 +205,7 @@ call s:h('StatusLineNC', s:none, s:bglight)
 call s:h('StatusLineTerm', s:none, s:bglighter, [s:attrs.bold])
 call s:h('StatusLineTermNC', s:none, s:bglight)
 call s:h('WildMenu', s:bg, s:purple, [s:attrs.bold])
-call s:h('CursorLine', s:none, s:subtle)
+call s:h('CursorLine', s:none, s:bglight)
 
 hi! link ColorColumn  DraculaBgDark
 hi! link CursorColumn CursorLine
