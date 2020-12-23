@@ -191,7 +191,7 @@ call s:h('DraculaDiffChange', s:orange, s:none)
 call s:h('DraculaDiffText', s:bg, s:orange)
 call s:h('DraculaDiffDelete', s:red, s:bgdark)
 
-" }}}2
+" }}}
 
 " }}}
 " User Interface: {{{
